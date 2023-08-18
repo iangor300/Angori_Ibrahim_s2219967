@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Mains">
+
+    <ImageView
+        android:id="@+id/flagImageView"
+        android:layout_width="493dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Flag"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/currencyNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_toEndOf="@id/flagImageView"
+        android:layout_alignTop="@id/flagImageView"
+        android:layout_alignBottom="@id/flagImageView"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currencyNameTextView"
+        android:text="Currency Conversion"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <Spinner
+        android:id="@+id/currencySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:entries="@array/currency_array"/>
+
+    <Spinner
+        android:id="@+id/convertToCurrencySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currencySpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="78dp"
+        android:entries="@array/currency_array"/>
+
+    <EditText
+        android:id="@+id/edtText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convertToCurrencySpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:hint="Enter amount"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/convertCurrenciesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Convert Currency"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/conversionTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convertCurrenciesButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Conversion Result:"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/conversionTxtView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/image1"/>
+
+    <Button
+        android:id="@+id/itemCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Move to Main Page"
+        android:textColor="@color/GreenYellow"
+        android:textStyle="bold"/>
+</RelativeLayout>

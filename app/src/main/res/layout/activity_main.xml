@@ -1,0 +1,85 @@
+<!--  MPD XML Starter code Resit 2022-2023  -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/salutation"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:text="Welcome to Mobile Platform Development"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/Cc_Page_Button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Move to Currency Converter Page"
+            android:textColor="@color/GreenYellow"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            app:srcCompat="@drawable/scot50pound" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="pars data"
+            android:textColor="@color/Orange"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/acknowledgement"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:height="40dp"
+            android:text="Contains Fx Currency Exchange data"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/rawDataDisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="Raw Data is Displayed here"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/More_Currencies_Conversion"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GBP_Conversion"
+            android:textColor="@color/Orange"
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:id="@+id/Currencies_Conversion"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Search"
+            android:textColor="@color/Orange"
+            android:textSize="25dp"
+            />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+</ScrollView>

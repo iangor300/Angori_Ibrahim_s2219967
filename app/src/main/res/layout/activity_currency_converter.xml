@@ -1,0 +1,85 @@
+<!--  MPD XML Starter code Resit 2022-2023  -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/salutation"
+            android:layout_width="153dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:text="Searching"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/clickBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cick Back"
+            android:textColor="@color/Orange"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViews"
+            android:layout_width="match_parent"
+            android:layout_height="169dp"
+            app:srcCompat="@drawable/image" />
+        <Button
+            android:id="@+id/buttonMoveToCC"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Click to Activity_Mains Converter"
+            android:textColor="@color/Orange"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp">
+
+            <SearchView
+                android:layout_width="64dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/insertCurrency"
+                android:layout_width="279dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textColor="@color/Orange"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/acknowledgement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:height="40dp"
+            android:text="Contains Fx Currency Exchange data"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rawDataDisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Raw Data is Displayed here"
+            android:textSize="18sp" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+</ScrollView>
